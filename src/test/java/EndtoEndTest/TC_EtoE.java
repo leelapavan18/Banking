@@ -1,0 +1,25 @@
+package EndtoEndTest;
+
+
+import org.testng.annotations.Test;
+
+import Baseclass.BaseClass;
+import Pages.LoginPage;
+import Pages.NewAccount;
+
+public class TC_EtoE extends BaseClass {
+
+
+	@Test(retryAnalyzer = Utils.Retry.class)
+	public void CompleteE2E() throws InterruptedException {
+		LoginPage LP = new LoginPage(driver);
+		LP.login();
+		
+
+		NewAccount NA = new NewAccount(driver);
+		NA.NewAccountBank();
+		NA.Details();
+		NA.getAccountID();
+		NA.Nexttomove();
+	}
+}
