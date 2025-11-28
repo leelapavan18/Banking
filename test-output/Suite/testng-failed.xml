@@ -9,7 +9,7 @@
       <class name="EndtoEndTest.TC_EtoE">
         <methods>
           <include name="browserSetup"/>
-          <include name="CompleteE2E"/>
+          <include name="CompleteE2E" invocation-numbers="1 2"/>
         </methods>
       </class> <!-- EndtoEndTest.TC_EtoE -->
     </classes>
